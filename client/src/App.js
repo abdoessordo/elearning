@@ -1,20 +1,30 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+
+// Global Styles
+import GlobalStyle from "./globalStyles";
+
+// Pages
+import Dashboard from "./pages/dashboard";
 import Landing from "./pages/Landing";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <Router>
+    <>
+      <GlobalStyle />
+
       <Routes>
         <Route path="/" element={<Landing />} />
-        {/* <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/settings" element={<Settings />} />
-        <Route path="/create" element={<Create />} />
-        <Route path="/post/:postId" element={<SinglePost />} /> */}
+
+        <Route path="app" element={<Dashboard />}>
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="profile" element={<Dashboard />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 
