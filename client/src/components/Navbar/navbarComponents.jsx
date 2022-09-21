@@ -11,10 +11,6 @@ export const Nav = styled.nav`
   z-index: 10;
 `;
 
-export const Logo = styled.div`
-  font-size: 2rem;
-  font-weight: 700;
-`;
 
 export const Bars = styled(FaBars)`
   display: none;

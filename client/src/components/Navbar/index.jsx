@@ -1,12 +1,13 @@
 import StyledButton from "../StyledButton";
-import { Nav, NavLink, Bars, NavMenu, Logo } from "./navbarComponents";
+import Logo from "../Logo";
+import { Nav, NavLink, Bars, NavMenu } from "./navbarComponents";
 
 export default function navbar() {
   return (
     <>
       <Nav>
         <NavLink to="/">
-          <Logo>LOGO</Logo>
+          <Logo />
         </NavLink>
         <Bars />
         <NavMenu>
