@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Logo from "../../components/Logo";
 import Sidebar from "../../components/Sidebar";
 import Header from "./components/header";
+import NewCourses from "./components/NewCourses";
 
 export default function Dashboard() {
   return (
@@ -12,6 +13,7 @@ export default function Dashboard() {
       </Left>
       <Mid>
         <Header />
+        <NewCourses />
       </Mid>
       <Right></Right>
     </Wrapper>
