@@ -23,7 +23,7 @@ export default function NewCourses() {
 }
 
 const Container = styled.div`
-  padding: 2rem;
+  padding: 2rem 0;
   h1 {
     font-size: 2rem;
     font-weight: 500;

@@ -2,7 +2,7 @@ import { SidebarData } from "./SidebarData";
 import MenuItem from "./MenuItem";
 import styled from "styled-components";
 
-export default function Sidebar() {
+export default function SidebarMenu() {
   return (
     <Wrapper>
       {SidebarData.map((item, index) => (
@@ -18,5 +18,13 @@ export default function Sidebar() {
 }
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 2rem;
 `;
+
+
+
+
+
